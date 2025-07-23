@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>External CSS</title>
+    <link rel="stylesheet" href="styles.css" 
+   style="background-color:lightskyblue;">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module5</title>
+</head>
+<heading2><b>Module6</b></heading2>
+<br>
+<br>
+<heading3>Communication Protocals</heading3>
+<br>
+<br>
+<h4>I2C</h4>
+<p>A synchronous, multi-master, multi-slave serial bus that uses only two wires: SDA (Serial Data Line) for data and SCL (Serial Clock Line) for synchronization. It's known for its simplicity and 
+    fficiency in short-distance communication.</p>
+    <h5>Characteristics</h5>
+<p>Two-wire communication, supports multiple devices on the same bus, relatively slower speed compared to SPI, ideal for communication between microcontrollers and lower-speed peripherals like temperature sensors, accelerometers, EEPROMs, and some display drivers. 
+    Each device has a unique address.</p>
+    <h6>Applications</h6>
+    <p>Commonly found in embedded systems for reading data from sensors (e.g., environmental sensors, IMUs) and controlling small actuators 
+        (e.g., servo motors with I2C interfaces).</p>
+ <h4>UART</h4>
+ <p>An asynchronous serial communication protocol that uses two wires: TX (Transmit) and RX (Receive). Asynchronous means there's no shared clock signal; instead, 
+    both sides must agree on a baud rate (data transfer speed) beforehand.</p>
+    <h5>Characteristics</h5>
+    <p>Two-wire communication, point-to-point (typically one sender and one receiver), no clock line, simpler to implement in software, but requires precise baud rate matching. 
+        It frames data with start and stop bits.</p>
+        <h6>Applications</h6>
+        <p>Widely used for debugging (e.g., sending data to a computer's serial monitor), communicating with GPS modules, Bluetooth modules, Wi-Fi modules, and 
+            some serial-controlled actuators that require a stream of data.</p>
+<h4>SPI</h4>
+<p>A synchronous, full-duplex, master-slave serial communication protocol that typically uses four wires: MOSI (Master Out Slave In), MISO (Master In Slave Out), SCK (Serial Clock), and SS (Slave Select).
+     Full-duplex means data can be sent and received simultaneously.</p>
+     <h5>Characteristics</h5>
+     <p>Four-wire communication (though variations exist), dedicated clock line, very high data transfer speeds, supports multiple slave devices (each requiring a separate SS line from the master), 
+        but requires more pins than I2C.</p>
+        <h6>Applications</h6>
+        <p>Preferred for high-speed data transfer with devices like SD card readers, flash memory, high-resolution ADCs (Analog-to-Digital Converters), DACs (Digital-to-Analog Converters), 
+            and some fast display controllers.</p>
